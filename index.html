@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----- custom css here ---- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ----- Font ----- -->
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
+    <title>Home page</title>
+</head>
+
+<body>
+    <header>
+        <!-- ----- navbar here ----- -->
+        <nav class="navbar flex space-bewteen">
+            <div class="logo"><img src="img/Logo.png" alt=""></div>
+            <ul class="menu-item flex">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="icons flex gap-20">
+                <a href="#"><img src="img/cart.svg" alt=""></a>
+                <a href="#"><img src="img/user.svg" alt=""></a>
+                <a href="#"><img src="img/search.svg" alt=""></a>
+                <a href="#" class="bar"><i class='bx bx-menu'></i></a>
+            </div>
+        </nav>
+        <!-- ----- navbar end here ----- -->
+    </header>
+
+    <main>
+        <!-- --- hero section -- -->
+        <section class="hero-section">
+            <div class="small-folwer"><img src="img/folwer.png" alt=""></div>
+            <div class="content">
+                <ul>
+                    <li><h1 id="monstera">MONSTERA</h1></li>
+                    <li></li>
+                    <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Debitis ab veniam adipisci corrupti unde, nostrum saepe.</p>
+                    </li>
+                    <li>
+                        <p>Quibusdam perferendis, dolore est odit iste cum quas quidem
+                            officiis laudantium hic maxime recusandae?</p>
+                    </li>
+                </ul>
+
+                <button class="btn flex"><span>DISCOVER</span> <img src="img/greaterThan.svg" alt=""></button>
+            </div>
+            <div class="boxes flex flex-wrap gap-20">
+                <div class="box flex">
+                    <div class="box-img"><img src="img/water.png" alt=""></div>
+                    <div class="box-content">
+                        <h4>Feeding</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<p>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="box-img light"><img src="img/light.svg" alt=""></div>
+                    <div class="box-content">
+                        <h4>Light</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                </div>
+                <div class="box flex"> 
+                    <div class="box-img plough"><img src="img/plough.svg" alt=""></div>
+                    <div class="box-content">
+                        <h4>Care</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-img">
+                <img src="img/6_folwer_cut.png" alt="">    
+            </div>
+        </section>
+        <!-- --- hero end section -- -->
+    </main>
+
+    <!-- ---- js here --- -->
+    <script>
+        const menu = document.querySelector(".menu-item"),
+            bar = document.querySelector(".bar i");
+
+        bar.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            bar.classList.toggle("bx-x");
+        });
+    </script>
+</body>
+
+</html>
