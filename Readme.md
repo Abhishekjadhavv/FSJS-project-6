@@ -6,4 +6,4 @@ I have taken much knowledge from this project.
 
 I have built this project within half an hour.
 
-[website-link](http://itsabhi.ml)
+[website-link](https://abhi6.netlify.app)
